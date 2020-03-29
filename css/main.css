@@ -71,17 +71,20 @@ footer {
   #column-2 {
     background-color: #dc143c;
   }
-
+/*Avoiding open space at the bottom*/
   #column-3 {
     background-color: #f08080;
+    width: 100%;
   }
 
   footer {
     background-color: #ffdacc;
   }
-  
+   /*Adjust the width of columns for smaller screens*/ 
+  .col-3{
+    width: 50%;
+  }
 }
-
 
 /*---------- Desktops ----------*/
 @media (min-width: 1200px) {
@@ -99,10 +102,13 @@ footer {
 
   #column-3 {
     background-color: #ffd700;
+    width: 33.3%; /*one-third width*/
   }
 
   footer {
     background-color:#eee8aa;
   }
-   
+  .col-3 {
+    width: 33.3%;
+  }   
 }
